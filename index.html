@@ -5,7 +5,10 @@
         <title>Portifólio Online</title>
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
-    <body class="main">
+    <body data-theme="dark">
+        <div class="top-menu">
+            <button class="changeTheme" onclick="changeTheme()">Mudar Tema</button>
+        </div>
         <div class="title">
             <h2>Olá, eu sou o</h2>
             <h1> Helon Bentes Bastos Xavier</h1>
@@ -22,43 +25,80 @@
             </p>
         </div>
         <div class="skills">
-            <h2> Habilidades e Conhecimentos </h2>
-            <h3> Linguagens de Programação </h3>
-            <p> Java, Python, JavaScript, C/C++, C#, Dart </p>
-            <h3> Linguagens de Marcação e Linguagem de Estilização </h3>
-            <p> Markdown e HTML, estilização com CSS </p>
-            <h3> Linguagem de Montagem </h3>
-            <p> Assembly </p>
-            <h3> Banco de Dados Relacionais </h3>
-            <p> Mysql e MariaDB </p>
-            <h3> Banco de Dados Não Relacional </h3>
-            <p> MongoDB </p>
-            <h3> Linguagem de Versionamento </h3>
-            <p> Git </p>
-            <h3> Frameworks </h3>
-            <p> Springboot, React, ReactNative, Flutter </p>
-            <h3> Conhecimentos básicos sobre computação em nuvem, com a certificação CLF-C02 CloudPractitioner da AWS, usando a plataforma da AWS. </h3>
-        </div>
+
+            <div class="row">
+                <div class="card programmingLanguage">
+                    <h2>Linguagem de Programação</h2>
+                    <p>Linguagem de Programação que tive contato</p>
+                </div>
+                <div class="card frameworks">
+                    <h2>Linguagem de Programação</h2>
+                    <p>Linguagem de Programação que tive contato</p>
+                </div>
+                <div class="card dataBases">
+                    <h2>Linguagem de Programação</h2>
+                    <p>Linguagem de Programação que tive contato</p>
+                </div>
+                <div class="card others">
+                    <h2>Linguagem de Marcação, Versionamento, estilização e montagem</h2>
+                    <p>Linguagem de Programação que tive contato</p>
+                </div>
+                <div class="card certified">
+                    <h2>Certificações</h2>
+                    <p>Linguagem de Programação que tive contato</p>
+                </div>
+            </div>
+
+<!--            <h2> Habilidades e Conhecimentos </h2>-->
+<!--            <h3> Linguagens de Programação </h3>-->
+<!--            <p> Java, Python, JavaScript, C/C++, C#, Dart </p>-->
+<!--            <h3> Linguagens de Marcação e Linguagem de Estilização </h3>-->
+<!--            <p> Markdown e HTML, estilização com CSS </p>-->
+<!--            <h3> Linguagem de Montagem </h3>-->
+<!--            <p> Assembly </p>-->
+<!--            <h3> Banco de Dados Relacionais </h3>-->
+<!--            <p> Mysql e MariaDB </p>-->
+<!--            <h3> Banco de Dados Não Relacional </h3>-->
+<!--            <p> MongoDB </p>-->
+<!--            <h3> Linguagem de Versionamento </h3>-->
+<!--            <p> Git </p>-->
+<!--            <h3> Frameworks </h3>-->
+<!--            <p> Springboot, React, ReactNative, Flutter </p>-->
+<!--            <h3> Conhecimentos básicos sobre computação em nuvem, com a certificação CLF-C02 CloudPractitioner da AWS, usando a plataforma da AWS. </h3>-->
+<!--        </div>-->
         <div class="professional-experience">
             <h2> Experiências Profissionais </h2>
             <p>
                 Sou estagiário de Desenvolvimento Back-End na empresa Compass UOL, empresa essa a qual devo muitos agradecimentos,
                 por me proporcionar uma ótima chance de aprendizado e desenvolvimento pessoal no início da carreira.
                 Na Compass UOL, durante os 6 meses de estágio estive aprendendo e utilizando programação backend,
-                focando no uso da linguagem Java, utilizando alguns bancos de dados como o banco de dados em memória H2,
-                bancos de dados relacionais como MySQL e não relacionais como MongoDB. Em conjunto com a linguagem java, também utilizei
-                um framework amplamente usado com ela, o springboot. Aprendi um pouco mais sobre o padrão de arquitetura de microserviços,
-                utilizando springcloud e um pouco do openfeign, kafka e docker, além de me introduzir aos testes automatizados. No final,
-                recebi um treinamento para passar na certificação da AWS, Cloud Pratictioner CLF-C02, como "presente" da parceria entre a Compass
-                e a AWS, da qual nós deram um voucher para realização gratuita da prova.
+                focando no uso das seguintes linguagens de programação, ferramentas, práticas e arquiteturas:
+                <ul>
+                    <li>Java</li>
+                    <li>Springboot</li>
+                    <li>Kafka</li>
+                    <li>RabbitMQ</li>
+                    <li>Arquitetura de Microserviços</li>
+                    <li>Docker</li>
+                    <li>Banco de dados em memória H2</li>
+                    <li>Banco de dados relacional MySQL</li>
+                    <li>Testes Automatizados</li>
+                </ul>
+                <p> Nos últimos 2-3 meses do estágio estive estudando com o auxilio dos instrutores para realização
+                    da prova de certificação da AWS, CLF-C02 Cloud Practitioner, da qual tive o imenso prazer de aprender
+                    mais sobre os fundamentos de computação em nuvem e também de ter sido aprovado e ganhado a certificação.
+                </p>
             </p>
         </div>
         <div class="education">
             <h2> Educação </h2>
-            <p> Ensino Fundamental completo no Colégio Hermeto Botelho </p>
-            <p> Ensino Médio completo no Colégio Enira Morais Ribeiro </p>
-            <p> Cursando Bacharelado de Engenharia de Software no Instituto Federal do Paraná, atualmente no Terceiro Ano da faculdade, com previsão de término em 2025 </p>
-            <p> Intercâmbio com duração de 6 meses no Instituto Politécnico de Bragança - IPB, na cidade de Bragança em Portugal </p>
+            <ul>
+                <li>Ensino Fundamental completo no Colégio Hermeto Botelho</li>
+                <li>Ensino Médio completo no Colégio Enira Morais Ribeiro</li>
+                <li>Cursando Bacharelado de Engenharia de Software no Instituto Federal do Paraná, atualmente no Terceiro Ano da faculdade, com previsão de término em 2025 </li>
+                <li>Intercâmbio com duração de 6 meses no Instituto Politécnico de Bragança - IPB, na cidade de Bragança em Portugal</li>
+            </ul>
         </div>
     </body>
+    <script src="index.js"></script>
 </html>
